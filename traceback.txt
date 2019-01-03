@@ -1,0 +1,71 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/scene4.rpy", line 1092, in script
+    $renpy.pause(20,hard=True)
+  File "game/scene4.rpy", line 1092, in <module>
+    $renpy.pause(20,hard=True)
+  File "game/script.rpy", line 143, in execute
+    screen stat:
+  File "game/script.rpy", line 143, in execute
+    screen stat:
+  File "game/script.rpy", line 156, in execute
+    text "\nОчки детектива:"+" [detective]"+"\n\nОтношения:    "+" Клаус - [h] \n"+ "               Рудольф: [m] \n"+"               Ева: [l]\n"+"               Роза: [r]\n\n                             \n"+"[tmp]\n\n    \n"+"Логических последовательностей\n                     разгадано: [lg]  " xalign 0.99 yalign 0.2 font ffont size 30 slow_cps 15
+NameError: Name 'tmp' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/scene4.rpy", line 1092, in script
+    $renpy.pause(20,hard=True)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\python.py", line 1764, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/scene4.rpy", line 1092, in <module>
+    $renpy.pause(20,hard=True)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\exports.py", line 1304, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\ui.py", line 287, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\display\core.py", line 2553, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\display\core.py", line 2821, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\display\core.py", line 495, in visit_all
+    d.visit_all(callback)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\display\core.py", line 495, in visit_all
+    d.visit_all(callback)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\display\core.py", line 495, in visit_all
+    d.visit_all(callback)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\display\screen.py", line 401, in visit_all
+    callback(self)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\display\core.py", line 2821, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\display\screen.py", line 411, in per_interact
+    self.update()
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\display\screen.py", line 580, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 143, in execute
+    screen stat:
+  File "game/script.rpy", line 143, in execute
+    screen stat:
+  File "game/script.rpy", line 156, in execute
+    text "\nОчки детектива:"+" [detective]"+"\n\nОтношения:    "+" Клаус - [h] \n"+ "               Рудольф: [m] \n"+"               Ева: [l]\n"+"               Роза: [r]\n\n                             \n"+"[tmp]\n\n    \n"+"Логических последовательностей\n                     разгадано: [lg]  " xalign 0.99 yalign 0.2 font ffont size 30 slow_cps 15
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\text\text.py", line 1416, in _scope
+    return self.set_text(self.text_parameter, scope, self.substitute, update)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\text\text.py", line 1440, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\substitutions.py", line 242, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 605, in get_value
+  File "D:\Programs\renpy-6.99.12.1-sdk\renpy\substitutions.py", line 201, in __getitem__
+    raise NameError("Name '{}' is not defined.".format(key))
+NameError: Name 'tmp' is not defined.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.13.2919
+Rokken 1.0

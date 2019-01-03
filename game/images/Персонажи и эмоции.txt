@@ -1,0 +1,38 @@
+Battler
+Jessica
+George
+Maria
+
+Rosa
+
+Eva
+Hideyoshi
+
+Rudolf
+Kyrie
+
+Klaus
+Natsuhi
+
+Kinzo
+
+Shanon
+Kanon
+
+Gendji
+Gohda
+Kumasawa
+Nanjo
+
+Beatrice
+
+
+
+emoji:
+
+ace (торжество)
+doub (сомнение)
+exc (волнение)
+sad  (грусть)
+smile (улыбка)
+std (обычный)

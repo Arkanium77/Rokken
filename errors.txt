@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/scene2.rpy", line 250: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
+    nvl clear
+    ^
+
+Ren'Py Version: Ren'Py 6.99.13.2919

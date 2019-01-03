@@ -1,0 +1,6 @@
+sc1:
+scene bg roses s
+show screen Rain
+$renpy.pause(5)
+show bg beach s
+$renpy.pause(5)
